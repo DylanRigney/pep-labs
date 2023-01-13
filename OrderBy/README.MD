@@ -9,6 +9,7 @@ This is done with the ORDER BY clause.
 Example:
 ```sql
 SELECT * FROM table_name ORDER BY column1 [, column2, column3, etc...] [ASC|DESC]
+SELECT * FROM character ORDER BY first_name, last_name ASC;
 ```
 
 When ordering by multiple columns, the priority is from left to right.
@@ -20,6 +21,7 @@ For example, one might add the `ORDER BY` clause after the `WHERE` clause of a q
 lowest salary:
 ```sql
 SELECT * FROM employee_table WHERE current = true ORDER BY salary DESC
+SELECT * FROM character ORDER BY first_name, last_name;
 ```
 
 Additional reference material if needed: https://www.w3schools.com/sql/sql_orderby.asp
@@ -39,3 +41,4 @@ character table
 |5   |'Feyd-Rautha' |'Harkonnen'  |
 
 #### Problem 1: Write a statement below to query the database for all characters. Make sure the results are in ascending order by last name, and first name as a tie-breaker.
+SELECT * FROM character ORDER BY first_name, last_name;
