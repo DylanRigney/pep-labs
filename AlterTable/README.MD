@@ -40,3 +40,4 @@ site_user table
 |3         |'Charles'          |
 
 #### Problem 1: Use the ALTER keyword to add a "lastname" column to the "site_user" table.
+ALTER TABLE site_user ADD lastname VARCHAR(100);
