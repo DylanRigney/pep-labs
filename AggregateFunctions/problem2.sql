@@ -1,0 +1,1 @@
+SELECT COUNT(salary="Smith") FROM employee;

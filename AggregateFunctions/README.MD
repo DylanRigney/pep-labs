@@ -47,7 +47,7 @@ employee table
 #### Problem 1: use the `SUM()` aggregate function to output the total of all salaries found in the table.
 
 Note: the output should not contain any other info but the sum.
-
+SELECT SUM(salary) FROM employee;
 - - -
 
 ## Problem 2 
@@ -63,7 +63,7 @@ employee table
 #### Problem 2: use the `COUNT()` aggregate function to output the number of employees with the last name "Smith".
 
 Note: the output should not contain any other info but the count
-
+SELECT COUNT("Smith") FROM employee;
 - - -
 
 ## Problem 3 
