@@ -46,3 +46,13 @@ artist table
 
 #### Problem 1: Use the `GROUP BY` clause with the `COUNT()` aggregate function to query the songs table for the number of songs by each artist.
 HINT: You should avoid using the wild card (*) in your statement. All projected columns must either be used in the `GROUP BY` clause or an aggregate function.
+
+SELECT artist, COUNT(song)
+FROM artist
+Group BY artist
+Order BY COUNT(song) DESC;
+
+SELECT manager, AVG(salary)
+FROM employees
+GROUP BY manager
+ORDER BY AVG(salary) DESC;
